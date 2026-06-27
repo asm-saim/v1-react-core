@@ -3,11 +3,11 @@ import Animal from './Animal'
 import House from './Condition'
 
 function App() {
-
+  const time = 30
   return (
     <>
       <h2>React Core Concepts</h2>
-      <House name="WhiteHouse" location="USA" isActive={true}></House>
+      <House name="WhiteHouse" location="USA" isActive={true} duration={time}></House>
       <House name="Pentagon" location="Manhattan" isActive={true}></House>
       <House name="UN-Center" location="New York" isActive={false}></House>
 
