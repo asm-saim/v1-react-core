@@ -192,3 +192,13 @@
   padding: 10px;
   margin: 10px;
 }
+
+.universal{
+  border-radius: 20px;
+  border: 2px solid rgb(125, 250, 114);
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 255, 255, 0.164);
+}
+
+

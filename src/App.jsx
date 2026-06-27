@@ -1,18 +1,23 @@
 import './App.css'
 import Animal from './Animal'
 import House from './Condition'
+import Books from './Books'
 
 function App() {
   const time = 30
   return (
     <>
       <h2>React Core Concepts</h2>
+
+      <Books name="Harry Potter" pages={300}></Books>
+      <Books name="Anne's Diary" pages={200}></Books>
+      <Books name="TinTin" pages={150}></Books>
+
       <House name="WhiteHouse" location="USA" isActive={true} duration={time}></House>
       <House name="Pentagon" location="Manhattan" isActive={true}></House>
       <House name="UN-Center" location="New York" isActive={false}></House>
 
-
-      <Animal name="Tiger" age="35"></Animal>
+      {/* <Animal name="Tiger" age="35"></Animal> */}
       {/* <Info></Info>
       <Team></Team>
       <Pet></Pet>
