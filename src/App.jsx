@@ -3,16 +3,24 @@ import './App.css'
 // import House from './Condition'
 // import Books from './Books'
 import Actors from './Actors'
+import Singer from './Singer';
 
 function App() {
-  const time = 30
+  const time = 30;
+  //list rendering
   const actors = ["Tom Cruse", "Jason Bourne", "IP Man", "Dwyne Jonson", "Json Statham"];
+
+  const singers = [{ id: 1, name: "Sami", age: 45 }, { id: 2, name: "Zain", age: 55 }, { id: 3, name: "Meher", age: 40 }, { id: 4, name: "Yamin", age: 34 }]
   return (
     <>
       <h2>React Core Concepts</h2>
       {
-        actors.map(actor =><Actors name={actor}></Actors>)
+        singers.map(singer => <Singer key={singer.id} name={singer.name} age={singer.age}></Singer>)
       }
+
+      {/* {
+        actors.map(actor => <Actors name={actor}></Actors>)
+      } */}
 
 
       {/* <Books name="Harry Potter" pages={300}></Books>

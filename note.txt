@@ -19,7 +19,7 @@ We can write HTML-like markup inside jsx.
 multiple line markup text must be in a fragmen or in a tag(div).
 attribute must be used camel case if more than 2 word.ex: textAlign
 all tags must be a closing tag.<></>
-for dynamic value , in jsx we will use {} not ${}
+****For dynamic value , in jsx we will use {} not ${}
 
 
 ##There are 3 types to express css style in react:
