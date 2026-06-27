@@ -1,0 +1,20 @@
+react: React is a java script library for building user interface(UI)
+
+React.js         vs           Next.js:
+1.react is js library   ----  next.js is a full-stack framework(built on react)
+
+##
+Term            Meaning
+React	        A JavaScript library for building user interfaces
+Component	A reusable piece of the UI
+UI	        User Interface (what users see)
+JSX	        HTML-like syntax written inside JavaScript
+DOM	        The browser's page structure
+Virtual DOM	React's efficient way of updating only what's changed
+
+##JSX:
+JSX is a syntax extension for js.
+JSX stand for js + xml.
+WE can write HTML-like markup inside jsx
+
+
