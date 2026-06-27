@@ -10,30 +10,51 @@ function App() {
       <Pet></Pet>
       <Pet></Pet>
 
+      <Device name="Laptop" price="200$"></Device>
+      <Device name="Mobile" price="80$"></Device>
+      <Device name="Tab" price="120$"></Device>
+
+
     </>
 
   )
+}
+//component:
+function Device(props) {
+  return (
+    <div style={{ border: "2px solid gray", padding: "20px", margin: "20px" }}>
+      <h3>Device Name:{props.name}</h3>
+      <p>Price: {props.price}</p>
+    </div>
+  )
+}
+
+
+//for style:
+const design = {
+  color: "blue",
+  textAlign: "left"
 }
 
 //make a component:
 function Info() {
   const code = 777
   return (
-    <h4>I am a Programmer code {code}</h4>
+    <h4 style={design}>I am a Programmer code {code}</h4>
   )
 }
 
 //component:
 function Pet() {
   return (
-    <>
+    <div className='pet'>
       <p>Different types of pet:</p>
       <ul>
         <li>Cat</li>
         <li>Fish</li>
         <li>Bird</li>
       </ul>
-    </>
+    </div>
 
   )
 }
@@ -42,7 +63,9 @@ function Pet() {
 function Team() {
   const task = "dept.Head"
   return (
-    <p >Team Name is assign by: {task}</p>
+    <p style={
+      { border: "2px solid green", padding: "10px", margin: "10px" }
+    }>Team Name is assign by: {task}</p>
   )
 }
 

@@ -18,3 +18,9 @@ JSX stand for js + xml.
 WE can write HTML-like markup inside jsx
 
 
+
+##There are 3 types to express css style in react:
+1. in .css file, then push it in className.
+2. create a object in jsx, then call it in component as style={obj name} 
+3. directly implement the style. style={{color:"red"}}  
+
