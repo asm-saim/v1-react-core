@@ -27,4 +27,15 @@ for dynamic value , in jsx we will use {} not ${}
 2. create a object in jsx, then call it in component as style={obj name} 
 3. directly implement the style. style={{color:"red"}}  
 
-##props destructuring: props-> property
+
+##Props: porps is like html attribute.
+## we can recieve props in 2 ways:
+1.props.
+2.destructuring.
+
+##props destructuring: props means property
+##props are read only mode.
+## we can use default value=0 to handle undefined props.
+
+##To use external file, we need to use: import name from "file name"
+##Simultaneously, that file should be export default.  

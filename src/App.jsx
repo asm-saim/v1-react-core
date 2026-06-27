@@ -1,11 +1,19 @@
 import './App.css'
+import Animal from './Animal'
+import House from './Condition'
 
 function App() {
 
   return (
     <>
-      <h2>JS+React</h2>
-      <Info></Info>
+      <h2>React Core Concepts</h2>
+      <House name="WhiteHouse" location="USA" isActive={true}></House>
+      <House name="Pentagon" location="Manhattan" isActive={true}></House>
+      <House name="UN-Center" location="New York" isActive={false}></House>
+
+
+      <Animal name="Tiger" age="35"></Animal>
+      {/* <Info></Info>
       <Team></Team>
       <Pet></Pet>
       <Pet></Pet>
@@ -17,10 +25,9 @@ function App() {
       <Sports deptName="Soccer" player="22"></Sports>
       <Sports deptName="Basketball" player="26"></Sports>
 
-
       <Fruits name="Orange" color="yellow" ></Fruits>
       <Fruits name="Berry" color="red-wine" ></Fruits>
-      <Fruits name="Apple"></Fruits>
+      <Fruits name="Apple"></Fruits> */}
 
 
     </>
