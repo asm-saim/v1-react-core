@@ -27,4 +27,4 @@ for dynamic value , in jsx we will use {} not ${}
 2. create a object in jsx, then call it in component as style={obj name} 
 3. directly implement the style. style={{color:"red"}}  
 
-##props destructuring:
+##props destructuring: props-> property

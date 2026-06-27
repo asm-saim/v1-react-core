@@ -18,13 +18,18 @@ function App() {
       <Sports deptName="Basketball" player="26"></Sports>
 
 
+      <Fruits name="Orange" color="yellow" ></Fruits>
+      <Fruits name="Berry" color="red-wine" ></Fruits>
+      <Fruits name="Apple"></Fruits>
+
+
     </>
 
   )
 }
 
 //component: obj destructuring
-function Sports({depName, player}) {
+function Sports({ depName, player }) {
   // console.log(props)
   // const {depName,player}={deptName:"Basketball", player:"26"}
   return (
@@ -34,6 +39,17 @@ function Sports({depName, player}) {
     </div>
   )
 }
+
+//component: destructuring
+function Fruits({ name, color = "not-given" }) {
+  return (
+    <div className='pet'>
+      <h2>Fruits Name: {name} </h2>
+      <p>Color: {color}</p>
+    </div>
+  )
+}
+
 
 //component:
 function Device(props) {
