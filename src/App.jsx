@@ -1,21 +1,27 @@
 import './App.css'
-import Animal from './Animal'
-import House from './Condition'
-import Books from './Books'
+// import Animal from './Animal'
+// import House from './Condition'
+// import Books from './Books'
+import Actors from './Actors'
 
 function App() {
   const time = 30
+  const actors = ["Tom Cruse", "Jason Bourne", "IP Man", "Dwyne Jonson", "Json Statham"];
   return (
     <>
       <h2>React Core Concepts</h2>
+      {
+        actors.map(actor =><Actors name={actor}></Actors>)
+      }
 
-      <Books name="Harry Potter" pages={300}></Books>
+
+      {/* <Books name="Harry Potter" pages={300}></Books>
       <Books name="Anne's Diary" pages={200}></Books>
       <Books name="TinTin" pages={150}></Books>
 
       <House name="WhiteHouse" location="USA" isActive={true} duration={time}></House>
       <House name="Pentagon" location="Manhattan" isActive={true}></House>
-      <House name="UN-Center" location="New York" isActive={false}></House>
+      <House name="UN-Center" location="New York" isActive={false}></House> */}
 
       {/* <Animal name="Tiger" age="35"></Animal> */}
       {/* <Info></Info>

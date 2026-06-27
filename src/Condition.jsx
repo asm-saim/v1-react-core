@@ -44,6 +44,18 @@
 // }
 
 //conditional rendering 3: || (only false)
-export default function House({ name, location, isActive, duration = 0 }) {
-    return isActive || <div className="pet"><h3>House name: {name}</h3><p>House location: {location}</p></div>
-}
+// export default function House({ name, location, isActive, duration = 0 }) {
+//     return isActive || <div className="pet"><h3>House name: {name}</h3><p>House location: {location}</p></div>
+// }
+
+//conditionally assigning jsx to a variable:
+// export default function House({ name, isActive }) {
+//     let value = name;
+//     if (isActive) {
+//         value = name + " reached";
+//     }
+//     return (
+//         <li>{value}</li>
+//     )
+
+// }
