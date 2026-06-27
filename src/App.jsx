@@ -3,20 +3,25 @@ import './App.css'
 // import House from './Condition'
 // import Books from './Books'
 import Actors from './Actors'
-import Singer from './Singer';
+import Singer from './Singer'
+import Footballers from './Footballers'
 
 function App() {
-  const time = 30;
+  // const time = 30;
   //list rendering
-  const actors = ["Tom Cruse", "Jason Bourne", "IP Man", "Dwyne Jonson", "Json Statham"];
+  // const actors = ["Tom Cruse", "Jason Bourne", "IP Man", "Dwyne Jonson", "Json Statham"];
+  //list should have a one unique key: prop
+  // const singers = [{ id: 1, name: "Sami", age: 45 }, { id: 2, name: "Zain", age: 55 }, { id: 3, name: "Meher", age: 40 }, { id: 4, name: "Yamin", age: 34 }]
 
-  const singers = [{ id: 1, name: "Sami", age: 45 }, { id: 2, name: "Zain", age: 55 }, { id: 3, name: "Meher", age: 40 }, { id: 4, name: "Yamin", age: 34 }]
+  const footballers = [{ Name: "Backham", goal: 400 }, { Name: "Kaka", goal: 540 }, { Name: "Carlos", goal: 340 }, { Name: "Jidan", goal: 610 }]
   return (
     <>
       <h2>React Core Concepts</h2>
-      {
+      <Footballers footballers={footballers}></Footballers>
+
+      {/* {
         singers.map(singer => <Singer key={singer.id} name={singer.name} age={singer.age}></Singer>)
-      }
+      } */}
 
       {/* {
         actors.map(actor => <Actors name={actor}></Actors>)
@@ -55,76 +60,76 @@ function App() {
 }
 
 //component: obj destructuring
-function Sports({ depName, player }) {
-  // console.log(props)
-  // const {depName,player}={deptName:"Basketball", player:"26"}
-  return (
-    <div className='pet'>
-      <h2>Department: {depName} </h2>
-      <p>Players: {player}</p>
-    </div>
-  )
-}
+// function Sports({ depName, player }) {
+//   // console.log(props)
+//   // const {depName,player}={deptName:"Basketball", player:"26"}
+//   return (
+//     <div className='pet'>
+//       <h2>Department: {depName} </h2>
+//       <p>Players: {player}</p>
+//     </div>
+//   )
+// }
 
 //component: destructuring
-function Fruits({ name, color = "not-given" }) {
-  return (
-    <div className='pet'>
-      <h2>Fruits Name: {name} </h2>
-      <p>Color: {color}</p>
-    </div>
-  )
-}
+// function Fruits({ name, color = "not-given" }) {
+//   return (
+//     <div className='pet'>
+//       <h2>Fruits Name: {name} </h2>
+//       <p>Color: {color}</p>
+//     </div>
+//   )
+// }
 
 
 //component:
-function Device(props) {
-  return (
-    <div style={{ border: "2px solid gray", padding: "20px", margin: "20px" }}>
-      <h3>Device Name:{props.name}</h3>
-      <p>Price: {props.price}</p>
-    </div>
-  )
-}
+// function Device(props) {
+//   return (
+//     <div style={{ border: "2px solid gray", padding: "20px", margin: "20px" }}>
+//       <h3>Device Name:{props.name}</h3>
+//       <p>Price: {props.price}</p>
+//     </div>
+//   )
+// }
 
 
 //for style:
-const design = {
-  color: "blue",
-  textAlign: "left"
-}
+// const design = {
+//   color: "blue",
+//   textAlign: "left"
+// }
 
 //make a component:
-function Info() {
-  const code = 777
-  return (
-    <h4 style={design}>I am a Programmer code {code}</h4>
-  )
-}
+// function Info() {
+//   const code = 777
+//   return (
+//     <h4 style={design}>I am a Programmer code {code}</h4>
+//   )
+// }
 
 //component:
-function Pet() {
-  return (
-    <div className='pet'>
-      <p>Different types of pet:</p>
-      <ul>
-        <li>Cat</li>
-        <li>Fish</li>
-        <li>Bird</li>
-      </ul>
-    </div>
+// function Pet() {
+//   return (
+//     <div className='pet'>
+//       <p>Different types of pet:</p>
+//       <ul>
+//         <li>Cat</li>
+//         <li>Fish</li>
+//         <li>Bird</li>
+//       </ul>
+//     </div>
 
-  )
-}
+//   )
+// }
 
-//component:
-function Team() {
-  const task = "dept.Head"
-  return (
-    <p style={
-      { border: "2px solid green", padding: "10px", margin: "10px" }
-    }>Team Name is assign by: {task}</p>
-  )
-}
+// //component:
+// function Team() {
+//   const task = "dept.Head"
+//   return (
+//     <p style={
+//       { border: "2px solid green", padding: "10px", margin: "10px" }
+//     }>Team Name is assign by: {task}</p>
+//   )
+// }
 
 export default App

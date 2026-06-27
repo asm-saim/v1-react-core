@@ -4,8 +4,8 @@ React.js         vs           Next.js:
 1.react is js library   ----  next.js is a full-stack framework(built on react)
 
 ##
-Term            Meaning
-React	        A JavaScript library for building user interfaces
+Term        Meaning
+React	    A JavaScript library for building user interfaces
 Component	A reusable piece of the UI
 UI	        User Interface (what users see)
 JSX	        HTML-like syntax written inside JavaScript
@@ -19,7 +19,7 @@ We can write HTML-like markup inside jsx.
 multiple line markup text must be in a fragmen or in a tag(div).
 attribute must be used camel case if more than 2 word.ex: textAlign
 all tags must be a closing tag.<></>
-****For dynamic value , in jsx we will use {} not ${}
+****For dynamic value , in jsx we will use {} 
 
 
 ##There are 3 types to express css style in react:
@@ -39,3 +39,6 @@ all tags must be a closing tag.<></>
 
 ##To use external file, we need to use: import name from "file name"
 ##Simultaneously, that file should be export default.  
+
+
+**list rendering: list should have a one unique key: prop. ex:key={singer.id}  
