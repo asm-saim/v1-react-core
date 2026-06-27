@@ -14,11 +14,27 @@ function App() {
       <Device name="Mobile" price="80$"></Device>
       <Device name="Tab" price="120$"></Device>
 
+      <Sports deptName="Soccer" player="22"></Sports>
+      <Sports deptName="Basketball" player="26"></Sports>
+
 
     </>
 
   )
 }
+
+//component: obj destructuring
+function Sports({depName, player}) {
+  // console.log(props)
+  // const {depName,player}={deptName:"Basketball", player:"26"}
+  return (
+    <div className='pet'>
+      <h2>Department: {depName} </h2>
+      <p>Players: {player}</p>
+    </div>
+  )
+}
+
 //component:
 function Device(props) {
   return (
